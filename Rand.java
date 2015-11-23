@@ -36,6 +36,8 @@ public class Rand {
         unsafe.putInt(randomMemory + 16L, 1246);
         unsafe.putInt(randomMemory + 20L, 1246);
         unsafe.putInt(randomMemory + 24L, 1246);
+        
+        //My very own Array of int's!!!
 
         for(int i=0; i<100; i = i + 4){
             System.out.println(unsafe.getInt(randomMemory + (long)i) + " at address: " + randomMemory);
